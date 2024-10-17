@@ -28,7 +28,7 @@ const router = createBrowserRouter(
             element: <PausScreen />
         }
     ], 
-    { basename: "/live-17-okt" }
+    { basename: "/intervals-app" }
 )
 
 export default router
