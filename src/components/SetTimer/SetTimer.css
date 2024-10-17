@@ -1,0 +1,79 @@
+p {
+    font-family: 'PT Sans';
+}
+
+.setTimerScreen-container {
+    height: 667px;
+    width: 375px;
+    padding: 40px;
+    background-color: #333333;
+    position: relative;
+}
+
+.setTimer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 279px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.minutes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minutes-text {
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+.minutes-small-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: .8rem;
+}
+
+.setTime:hover {
+    cursor: pointer;
+}
+
+.interval-container {
+    /* background-color: rgb(186, 186, 249); */
+    width: 279px;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+.checkbox-interval {
+    display: flex;
+    align-items: center;
+}
+
+
+.start-button {
+    width: 279px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+    border: 1px solid white;
+    font-size: 24px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}

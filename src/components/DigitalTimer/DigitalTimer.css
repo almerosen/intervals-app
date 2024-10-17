@@ -1,0 +1,34 @@
+.digital-timer-page {
+    width: 375px;
+    height: 667px;
+    background-color: #2D9CDB;
+    position: relative;
+}
+
+.digital-timer-text {
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+
+
+.digital-timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abort-timer-button {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}

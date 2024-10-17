@@ -1,0 +1,91 @@
+.alarmView-container {
+    background-color: #D74344;
+    width: 375px;
+    height: 667px;
+    padding: 40px;
+}
+
+.ellipses {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.ellipse-4 {
+    width: 506px;
+    height: 506px;
+    border-radius: 50%;
+    background-color: #D84748;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse-3 {
+    width: 344px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: #D94B4C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse-2 {
+    width: 234px;
+    height: 234px;
+    border-radius: 50%;
+    background-color: #DA5151;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse-1 {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background-color: #DB5758;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.alarm-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: 'PT Sans';
+    color: white;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.set-new-timer-button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
