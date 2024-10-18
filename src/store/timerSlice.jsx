@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import Timer from "easytimer.js";
-import { useNavigate } from "react-router-dom";
 const timer = new Timer()
 
 const initialState = {

@@ -3,8 +3,8 @@ import decrement from "../../assets/decrement.svg"
 import increment from "../../assets/increment.svg"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { useDispatch, useSelector, useStore } from "react-redux"
-import { resetTimer, startTimer, setupTimerListeners } from "../../store/timerSlice"
+import { useDispatch, useStore } from "react-redux"
+import { startTimer, setupTimerListeners } from "../../store/timerSlice"
 
 
 
