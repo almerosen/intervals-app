@@ -5,6 +5,15 @@ import { DigitalTimer } from "../components/DigitalTimer/DigitalTimer";
 import { AlarmView } from "../components/AlarmView/AlarmView";
 import { PausScreen } from "../components/PausScreen/PausScreen";
 
+function isProduction() {
+    console.log(import.meta.env)
+
+    if (import.meta.env.PROD) return  { basename: "7intervals-app" }
+    else return {}
+}
+
+// const isProduction = process.env.NODE_ENV === 'production'
+
 const router = createBrowserRouter(
     [
         {
@@ -28,7 +37,8 @@ const router = createBrowserRouter(
             element: <PausScreen />
         }
     ], 
-    { basename: "/intervals-app" }
+    isProduction()
+    // { basename: isProduction ? "/intervals-app" : "/" }
 )
 
 export default router
