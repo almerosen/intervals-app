@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Check if the source branch is dev
-        if: ${{ github.event.pull_request.head.ref != 'dev' }}
+        if: github.event.pull_request.head.ref != 'dev'
         run: |
           echo "Error: Only merges from the 'dev' branch to 'main' are allowed."
           exit 1
