@@ -8,6 +8,10 @@ on:
 jobs:
   check_branch:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write # Grants permission to write to GitHub Pages
+      id-token: write
 
     steps:
       - name: Check if the source branch is dev
