@@ -8,7 +8,8 @@ import { PausScreen } from "../components/PausScreen/PausScreen";
 function isProduction() {
     console.log(import.meta.env)
 
-    if (import.meta.env.PROD) return  { basename: "/intervals-app" }
+    // basename: "/intervals-app"
+    if (import.meta.env.PROD) return  { basename: import.meta.env.BASE_URL }
     else return {}
 }
 
