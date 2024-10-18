@@ -20,6 +20,10 @@ jobs:
         run: |
           echo "Error: Only merges from the 'dev' branch to 'main' are allowed."
           exit 1
+      - name: Proceed with merge
+        if: github.event.pull_request.head.ref == 'dev'
+        run: |
+          echo "Merging from 'dev' to 'main' is allowed."
 
   build:
     needs: check_branch
